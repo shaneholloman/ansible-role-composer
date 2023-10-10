@@ -36,6 +36,6 @@
     - role: shaneholloman.remi
       when: ansible_os_family == 'RedHat' and ansible_distribution != 'Fedora'
     - role: shaneholloman.git
-    - role: shaneholloman.php-versions
+    - role: shaneholloman.phps
     - role: shaneholloman.php
     - role: shaneholloman.composer

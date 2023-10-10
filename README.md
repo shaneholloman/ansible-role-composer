@@ -1,6 +1,6 @@
 # Ansible Role: Composer
 
-[![CI](https://github.com/shaneholloman-org/ansible-role-composer/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman-org/ansible-role-composer/actions/workflows/ci.yml)
+[![CI](https://github.com/shaneholloman/ansible-role-composer/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-composer/actions/workflows/ci.yml)
 
 Installs Composer, the PHP Dependency Manager, on any Linux or UNIX system.
 
@@ -85,4 +85,3 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2023
-
