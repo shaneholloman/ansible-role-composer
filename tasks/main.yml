@@ -26,7 +26,7 @@
   ansible.builtin.get_url:
     url: https://getcomposer.org/installer
     dest: /tmp/composer-installer.php
-    mode: 0755
+    mode: '0755'
     checksum: "sha384:{{ composer_installer_signature.content }}"
   when: not composer_bin.stat.exists
 
@@ -64,7 +64,7 @@
     owner: "{{ composer_home_owner }}"
     group: "{{ composer_home_group }}"
     state: directory
-    mode: 0755
+    mode: '0755'
 
 - name: Add GitHub OAuth token for Composer (if configured).
   become: true
@@ -74,7 +74,7 @@
     dest: "{{ composer_home_path }}/auth.json"
     owner: "{{ composer_home_owner }}"
     group: "{{ composer_home_group }}"
-    mode: 0644
+    mode: '0644'
   when: composer_github_oauth_token | length > 0
 
 - name: Include global-require.yml if composer_global_packages has elements
