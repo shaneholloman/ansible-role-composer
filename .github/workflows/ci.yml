@@ -7,14 +7,13 @@ name: CI
     branches:
       - main
   schedule:
-    - cron: "0 6 * * 0"
+    - cron: '0 6 * * 0'
 
 defaults:
   run:
     working-directory: 'shaneholloman.composer'
 
 jobs:
-
   lint:
     name: Lint
     runs-on: ubuntu-latest
